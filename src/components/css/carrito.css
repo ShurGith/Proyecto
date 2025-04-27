@@ -1,0 +1,142 @@
+.div-carrito-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.div-carrito-productos {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+}
+
+.div-carrito-producto {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    padding: 1rem;
+    width: 70%;
+}
+
+.div-carrito-producto:first-child {
+    border-bottom: 1px solid #000;
+}
+
+.div-carrito-producto:first-child .div-carrito-textos {
+    gap: 12rem;
+    padding-left: 2rem;
+}
+
+.div-carrito-producto:first-child .carrito-titulo,
+.div-carrito-producto:first-child .div-carrito-cuentas {
+    color: #000;
+    font-weight: 600;
+}
+
+.div-carrito-textos {
+    grid-column: 1/6;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: .5rem;
+    color: red;
+}
+
+.carrito-imagen {
+    width: 80px;
+}
+
+.carrito-titulo {
+    color: #0000009b;
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.div-carrito-cuentas {
+    grid-column: 6/9;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
+    align-items: center;
+    font-size: 1.2rem;
+}
+
+.carrito-count:not(:first-child) {
+    color: #000000;
+    font-size: 1 .2rem;
+    font-weight: 0;
+}
+
+.div-carrito-eliminar {
+    grid-column: 9/11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.div-carrito-contador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.carrito-icon {
+    cursor: pointer;
+}
+
+.carrito-eliminar-icon {
+    color: red;
+}
+
+.carrito-eliminar-icon::after {
+    content: "Eliminar";
+    font-size: 1rem;
+    font-weight: 600;
+    color: #000;
+}
+
+.div-carrito-total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 70%;
+    margin: 0 auto;
+}
+
+.div-carrito-total-textos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.carrito-total-texto{
+    font-size: 1.5rem;
+    font-weight:600;
+}
+
+.btn-fin-carrito {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    font-size: 1.2rem;
+    border-radius: .5rem;
+    padding: 4px 6px;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.btn-comprar {
+    color: #009320;
+    border: 1px solid #009320;
+}
+
+.btn-vaciar {
+    color: red;
+    border: 1px solid red;
+    font-size: 1rem;
+}
